@@ -1,0 +1,13 @@
+<mat-card>
+  <h3>Liste des catégories</h3>
+  <table class="table table-bordered table-striped">
+    <tr>
+      <th>Nom</th>
+    </tr>
+    <tr *ngFor="let categorie of categories">
+      <td>
+        {{categorie.nom}}
+      </td>
+    </tr>
+  </table>
+</mat-card>
