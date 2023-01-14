@@ -29,18 +29,9 @@ export class LoginComponent implements OnInit{
   }
 
   loginIn() {
-    const loginObj: ILogin = {
-      phone: this.frmLogin.value.login,
-      password: this.frmLogin.value.password
-    }
+    this.utilService.navigateByUrl('apropos');
 
-    this.authentificationService.logIn(loginObj).subscribe(loginResp => {
-      if(loginResp.role='Manager') {
-        this.utilService.navigateByUrl('apropos');
-        this.localDbService.token = "Token " + loginResp.access;
-      } else {
-        this.showError = true;
-      }
-    });
   }
+
 }
+
