@@ -18,11 +18,12 @@ export class AppGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
     if (this.localDbService.token) {
-      return true;
+      this.utilService.navigateByUrl("login");
+      return false;
+
     }
 
-    this.utilService.navigateByUrl("login");
-    return false;
+    return true;
   }
 
 }
