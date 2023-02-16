@@ -32,11 +32,61 @@ const routes: Routes = [
             (m) => m.ProduitsModule
           ),
       },
+
       {
         path: 'categories',
         loadChildren: () =>
           import('../categories/categorie.module').then(
             (m) => m.CatagoriesModule
+          ),
+      },
+      {
+        path: 'contactez',
+        loadChildren: () =>
+          import('../contactez_nous/contactez_nous.module').then(
+            (m) => m.Contactez_nousModule
+          ),
+      },
+      {
+        path: 'profile',
+        loadChildren: () =>
+          import('../profil/profile.module').then(
+            (m) => m.ProfileModule
+          ),
+      },
+      {
+        path: 'favoris',
+        loadChildren: () =>
+          import('../favoris/favoris.module').then(
+            (m) => m.FavorisModule
+          ),
+      },
+      {
+        path: 'list',
+        loadChildren: () =>
+          import('../list_maison/list.module').then(
+            (m) => m.ListModule
+          ),
+      },
+      {
+        path: 'statistique',
+        loadChildren: () =>
+          import('../statistic/statistic.module').then(
+            (m) => m.StatisticModule
+          ),
+      },
+      {
+        path: 'ajout',
+        loadChildren: () =>
+          import('../ajout_maison/ajout.module').then(
+            (m) => m.AjoutModule
+          ),
+      },
+      {
+        path: 'notification',
+        loadChildren: () =>
+          import('../notification/notification.module').then(
+            (m) => m.NotificationModule
           ),
       },
     ]

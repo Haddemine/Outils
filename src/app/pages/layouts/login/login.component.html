@@ -59,23 +59,22 @@
     <div class="square" style="--i:4;"></div>
     <div class="container">
       <div class="form">
-        <h2>Connexion</h2>
+        <h2>Se connecter</h2>
         <form method="post" action="auth/login" id="loginForm">
 
 
           <div class="input__box">
-            <input type="text" required class="form-control" id="login" name="login" placeholder="login">
+            <input type="text" required class="form-control" id="login" name="login" placeholder="Nom">
             <i class="fa fa-user"></i>
           </div>
           <div class="input__box">
             <input type="password" required class="form-control" id="password" name="password" placeholder="mot de passe"> <i
             class="fa fa-lock"></i></div>
 
-          <div class="input__box">
-            <input type="submit" value="Login" id="loginBtn" (click)="loginIn()">
-
+          <div class="input__box" align="center">
+            <input type="submit" value="Connexion" id="loginBtn" (click)="loginIn()">
           </div>
-          <p class="forget">Créer un compte</p>
+          <a href="registre" class="forget">Créer un compte</a>
 
 </form></div></div>
   </div>

@@ -1,29 +1,69 @@
+<br>
 <mat-card>
-  <h3>Liste des produits</h3>
-  <table class="table table-bordered table-striped">
-    <tr>
-      <th>Catégorie</th>
-      <th>Marque</th>
-      <th>Nom</th>
-      <th>Prix</th>
-      <th>Description</th>
-    </tr>
-    <tr *ngFor="let produit of produits">
-      <td>
-        {{produit.categories.nom}}
-      </td>
-      <td>
-        {{produit.marqueprives.nom}}
-      </td>
-      <td>
-        {{produit.nom}}
-      </td>
-      <td>
-        {{produit.prix | montantFormatter : true}}
-      </td>
-      <td>
-        {{produit.description}}
-      </td>
-    </tr>
-  </table>
+  <div class="row">
+    <div class="col-10" >
+      <h2 style="color:#0E7CFF">Demande d'achat (TVZ) – Nouakchott</h2>
+    </div>
+    <div class="col-2">
+      <mat-card-subtitle>Il y a 1 jour</mat-card-subtitle>
+    </div>
+  </div>
+  <button mat-icon-button aria-label="Example icon-button with a menu">
+    <mat-icon>book</mat-icon>Informations
+  </button>
+  <mat-card-actions align="end">
+    <button mat-button>Postulez</button>
+  </mat-card-actions>
 </mat-card>
+<br>
+<mat-card>
+  <div class="row">
+    <div class="col-10" >
+      <h2 style="color:#0E7CFF">Demande d'alocation (Liksar) – Nouakchott</h2>
+    </div>
+    <div class="col-2">
+      <mat-card-subtitle>Il y a 4 jour</mat-card-subtitle>
+    </div>
+  </div>
+  <button mat-icon-button aria-label="Example icon-button with a menu">
+    <mat-icon>book</mat-icon>Informations
+  </button>
+  <mat-card-actions align="end">
+    <button mat-button>Postulez</button>
+  </mat-card-actions>
+</mat-card>
+<br>
+<mat-card>
+  <div class="row">
+    <div class="col-10" >
+      <h2 style="color:#0E7CFF">Demande d'achat (Karafour Madrid) – Nouakchott</h2>
+    </div>
+    <div class="col-2">
+      <mat-card-subtitle>Il y a 1 semain</mat-card-subtitle>
+    </div>
+  </div>
+  <button mat-icon-button aria-label="Example icon-button with a menu">
+    <mat-icon>book</mat-icon>Informations
+  </button>
+  <mat-card-actions align="end">
+    <button mat-button>Postulez</button>
+  </mat-card-actions>
+</mat-card>
+<br>
+<mat-card>
+  <div class="row">
+    <div class="col-10" >
+      <h2 style="color:#0E7CFF">Demande d'achat (TVZ) – Nouakchott</h2>
+    </div>
+    <div class="col-2">
+      <mat-card-subtitle>Il y a 1 jour</mat-card-subtitle>
+    </div>
+  </div>
+  <button mat-icon-button aria-label="Example icon-button with a menu">
+    <mat-icon>book</mat-icon>Informations
+  </button>
+  <mat-card-actions align="end">
+    <button mat-button>Postulez</button>
+  </mat-card-actions>
+</mat-card>
+

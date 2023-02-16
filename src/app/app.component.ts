@@ -1,5 +1,7 @@
 import {Component, HostListener} from '@angular/core';
 import {LocalDbService} from "./services/local-db.service";
+import {MatDialog} from "@angular/material/dialog";
+import {ListComponent} from "./pages/list_maison/list/list.component";
 
 @Component({
   selector: 'app-root',
@@ -7,7 +9,7 @@ import {LocalDbService} from "./services/local-db.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ecommerceFront';
+  title = 'alocation de maison';
 
 
   constructor(private localDbService: LocalDbService) {
@@ -17,6 +19,7 @@ export class AppComponent {
   beforeUnload($event: any) {
     sessionStorage.setItem('token', JSON.stringify(this.localDbService.token));
   }
+
 
 
 }

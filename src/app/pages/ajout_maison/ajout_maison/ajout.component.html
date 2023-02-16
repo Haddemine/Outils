@@ -1,0 +1,71 @@
+<mat-card>
+  <div class="col-10" >
+    <h2 style="color:cadetblue">Publier une maison</h2>
+  </div>
+
+<form class="example-form">
+
+
+  <table class="example-full-width" cellspacing="0" >
+    <tr>
+      <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Chambres</mat-label>
+        <input matInput>
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Cuisines</mat-label>
+        <input matInput>
+      </mat-form-field></td>
+    </tr>
+    <tr>
+      <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Etages</mat-label>
+        <input matInput>
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Garages</mat-label>
+        <input matInput>
+      </mat-form-field></td>
+    </tr>
+    <tr>
+      <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>City</mat-label>
+        <input matInput placeholder="Ex. San Francisco">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>State</mat-label>
+        <input matInput placeholder="Ex. California">
+      </mat-form-field></td>
+
+    </tr>
+    <tr>
+      <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Référence</mat-label>
+        <input matInput #postalCode maxlength="7" placeholder="Ex. MGZ-383" value="MGZ-383">
+        <mat-hint align="end">{{postalCode.value.length}} / 7</mat-hint>
+      </mat-form-field></td>
+
+    </tr>
+
+  </table>
+
+  <mat-card-content>
+    <section class="example-section">
+      <mat-slide-toggle
+        class="example-margin"
+        [color]="color"
+        [checked]="checked"
+        [disabled]="disabled">
+        Disponible
+      </mat-slide-toggle>
+    </section>
+  </mat-card-content>
+
+</form>
+</mat-card>
+
+
+
+
+
+

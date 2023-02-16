@@ -9,6 +9,7 @@ import {SharedModule} from "../../common/shared/shared.module";
 import {AuthentificationService} from "./authentification.service";
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import {SideBarRightComponent} from "./side-bar-right/side-bar-right.component";
+import {RegistreComponent} from "./registre/registre/registre.component";
 
 
 @NgModule({

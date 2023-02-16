@@ -1,3 +1,91 @@
-<p>
-Bonjour
-</p>
+
+
+<!--<div class="row" style="margin-top: 100px">-->
+<!--  <div class="col-sm-4"></div>-->
+<!--  <div class="col-sm-4">-->
+<!--    <mat-card>-->
+<!--      <h1>Se connecter</h1>-->
+<!--      <form class="example-form" [formGroup]="frmLogin">-->
+<!--        <mat-form-field class="example-full-width" appearance="outline">-->
+<!--          <mat-label>Numéro de Téléphone</mat-label>-->
+<!--          <input type="text" matInput-->
+<!--                 formControlName="login"-->
+<!--                 placeholder="Saisir votre login">-->
+<!--          <mat-error *ngIf="frmLogin.controls['login'].hasError('required')">-->
+<!--            Login est <strong>obligatoire</strong>-->
+<!--          </mat-error>-->
+<!--        </mat-form-field>-->
+<!--        <mat-form-field class="example-full-width" appearance="outline">-->
+<!--          <mat-label>Mot de passe</mat-label>-->
+<!--          <input type="password" matInput-->
+<!--                 formControlName="password"-->
+<!--                 placeholder="Saisir votre mot de passe">-->
+<!--          <mat-error *ngIf="frmLogin.controls['password'].hasError('required')">-->
+<!--            Mot de passe est <strong>obligatoire</strong>-->
+<!--          </mat-error>-->
+<!--        </mat-form-field>-->
+<!--      </form>-->
+<!--      <div align="center">-->
+<!--      <button mat-raised-button style="background: mediumseagreen;color: white"-->
+<!--              (click)="loginIn()">Connexion-->
+<!--      </button>-->
+<!--      </div>-->
+<!--      <br>-->
+<!--      <br>-->
+<!--      <app-show-error [msg]="'Login et/ou mot passe incorrecte!'"-->
+<!--                      *ngIf="showError"></app-show-error>-->
+
+<!--      <br>-->
+<!--      <div align="center">-->
+<!--      <p style="color: darkgray">Vous n'avez pas un compte?</p>-->
+<!--      <a  style="color: black" href="apropos">S'inscrire</a>-->
+<!--      </div>-->
+<!--    </mat-card>-->
+<!--  </div>-->
+<!--  <div class="col-sm-4"></div>-->
+
+<!--</div>-->
+
+
+<section>
+  <div class="colour"></div>
+  <div class="colour"></div>
+  <div class="colour"></div>
+  <div class="box">
+    <div class="square" style="--i:0;"></div>
+    <div class="square" style="--i:1;"></div>
+    <div class="square" style="--i:2;"></div>
+    <div class="square" style="--i:3;"></div>
+    <div class="square" style="--i:4;"></div>
+    <div class="container">
+      <div class="form">
+        <h2>Registre</h2>
+        <form method="post" action="auth/login" id="loginForm">
+
+
+          <div class="input__box">
+            <input type="text" required class="form-control" id="name" name="name" placeholder="Nom complèt">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="input__box">
+            <input type="text" required class="form-control" id="phone" name="password" placeholder="Téléphone"> <i
+            class="fa fa-lock"></i></div>
+          <div class="input__box">
+            <input type="text" required class="form-control" id="email" name="password" placeholder="email"> <i
+            class="fa fa-lock"></i></div>
+          <div class="input__box">
+            <input type="password" required class="form-control" id="password" name="password" placeholder="mot de passe"> <i
+            class="fa fa-lock"></i></div>
+          <div class="input__box">
+            <input type="password" required class="form-control" id="repassword" name="repassword" placeholder="Re-entrer le mot de passe"> <i
+            class="fa fa-lock"></i></div>
+
+          <div class="input__box" align="center">
+            <input type="submit" value="Registre" id="loginBtn" (click)="loginIn()">
+
+          </div>
+          <a href="login" class="forget">Vous avez déja un compte</a>
+
+        </form></div></div>
+  </div>
+</section>
